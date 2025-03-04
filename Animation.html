@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mind-bending astronomical art">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        background: radial-gradient(circle, rgba(0, 7, 40, 0.8) 20%, rgba(0, 0, 0, 1) 80%);
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .hero::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background-color: rgba(75, 0, 130, 0.6);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse 2s infinite ease-in-out;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.8;
+        }
+        50% {
+            transform: translate(-50%, -50%) scale(1.5);
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.8;
+        }
+    }
+    
+
+    </style>
+    
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <h1><a href="Attempt_5 final Homepage.html">Multiverses</a></h1>
+        <ul>
+            <li><a href="Table.html">Table</a></li>
+            <li><a href="Grid.html">Grid</a></li>
+            <li><a href="Animation.html">Animation</a></li>
+            <li><a href="Form.html">Form</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="hero">Animation</div>
+
+    <div class="footer">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/Group-57.svg">
+        <div class="info">
+            <p>let's connect</p>
+            <p>hello@achintyalal.com</p>
+            <p>© Achintya Lal. All Rights Reserved.</p>
+        </div>
+    </div>
+    
+    </body>
+    </html>
