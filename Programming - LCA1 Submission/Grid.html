@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mind-bending astronomical art">
+    <title>Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            background: linear-gradient(to bottom, #000000, #28001d);
+            text-align: center;
+            font-size: 2rem;
+        }
+        .hero::before {
+            margin-top: 20vh;
+            content: "Grid";
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            top: 10vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+   </style>
+   
+    
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <h1><a href="Attempt_5 final Homepage.html">Multiverses</a></h1>
+        <ul>
+            <li><a href="Table.html">Table</a></li>
+            <li><a href="Grid.html">Grid</a></li>
+            <li><a href="Animation.html">Animation</a></li>
+            <li><a href="Form.html">Form</a></li>
+        </ul>
+    </div>
+
+    <div class="hero">Image Gallery</div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 15px; 
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 0px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
+
+
+        @media (max-width: 600px) {
+            .image-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Responsive Image Grid</h2>
+
+    <div class="image-grid">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/crystals-1.jpg" alt="demons">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/rip_16k_final-1.jpg" alt="stymie">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/cracked_edit_final-1.jpg" alt="quietus">
+        <img src="https://achintyalal.com/wp-content/uploads/2024/12/holding-on_edit-1-scaled.webp" alt="entwine">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/flipping-2.jpg" alt="flipping">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/Desktop-6.jpg" alt="multiverses">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/egg-final_2.jpg" alt="bubblegum mystery">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/Slide-16_9-3.jpg" alt="fractals">
+        <img src="https://achintyalal.com/wp-content/uploads/2023/05/Slide-16_9-1.jpg" alt="saturnian high">
+    </div>
+    <div></div>
+
+</body>
+
+<div class="footer">
+    <img src="https://achintyalal.com/wp-content/uploads/2023/05/Group-57.svg">
+    <div class="info">
+        <p>let's connect</p>
+        <p>hello@achintyalal.com</p>
+        <p>© Achintya Lal. All Rights Reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
